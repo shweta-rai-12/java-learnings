@@ -1,0 +1,33 @@
+Exceptions :
+
+Intermediate concepts :
+----------------------->
+Exception Propagation
+throw vs throws
+Custom Exceptions
+Multi-catch
+Finally Block Internals
+Re-throwing Exceptions
+Checked vs Unchecked Design Decisions
+-------------------------------------------------------------------------------------------
+Advanced concepts :
+----------------------->
+Exception Chaining
+Suppressed Exceptions
+try-with-resources Internals
+Creating Professional Exception Hierarchies
+Fail-Fast vs Fail-Safe
+Exception Translation Pattern
+Best Practices in Enterprise Applications
+Performance Cost of Exceptions
+Stack Trace Deep Understanding
+Global Exception Handling (Spring Boot concept)
+Anti-patterns (VERY important)
+-------------------------------------------------------------------------------------------
+
+
+
+Exception Propagation :
+
+
+

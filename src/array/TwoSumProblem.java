@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Problem1 {
+public class TwoSumProblem {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
@@ -33,7 +33,7 @@ public class Problem1 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        Problem1 problem = new Problem1();
+        TwoSumProblem problem = new TwoSumProblem();
         int[] result = problem.twoSum(nums, target);
         System.out.println(Arrays.toString(result));
     }

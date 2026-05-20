@@ -78,14 +78,14 @@ public class MaxDepartment {
         employees.stream()
                 .sorted(Comparator.comparing(x->x.name))
                 .forEach(Employee -> System.out.println(Employee.toString()));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         //Employeee names
         System.out.println("Employee Names only :");
         employees.stream()
                 .map(Employee::getName)
                 .forEach(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Get Employee Details, with sorted Employee name,salary, department
         System.out.println("Employee Details with sorted Employee name,salary, department :");
@@ -94,7 +94,7 @@ public class MaxDepartment {
                         .thenComparing(Employee::getSalary)
                         .thenComparing(Employee::getDepartment))
                 .forEach(Employee -> System.out.println(Employee.toString()));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
 
         // Get Max salary
@@ -103,7 +103,7 @@ public class MaxDepartment {
                 .mapToInt(Employee::getSalary)
                 .max()
                 .ifPresent(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
 
 
@@ -117,14 +117,14 @@ public class MaxDepartment {
                 .stream()
                 .max(Map.Entry.comparingByValue())
                 .ifPresent(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Group employees by department ,Expected structure: Map<String, List<Employee>>
         System.out.println("Group employees by department");
         employees.stream()
                 .collect(Collectors.groupingBy(
                         Employee::getDepartment));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Count employees in each department
         System.out.println("Count employees in each department : ");
@@ -133,14 +133,14 @@ public class MaxDepartment {
                         Employee::getDepartment,
                         Collectors.counting()))
                 .forEach((department, count) -> System.out.println(department + ": " + count));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Max salary in each department
         System.out.println("Find the highest paid employee in each department");
         employees.stream()
                 .collect(Collectors.groupingBy(Employee :: getDepartment, Collectors.maxBy(Comparator.comparingInt(Employee :: getSalary))))
                 .forEach((department, maxSalary) -> System.out.println(department + ": "    + maxSalary.orElse(null)));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
 
         // Sum of salaries using reduce method(sums primitive and objects)
@@ -148,7 +148,7 @@ public class MaxDepartment {
                 .map(Employee::getSalary)
                 .reduce(0, Integer::sum);
         System.out.println(total);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Sum of all salaries
         System.out.println("Sum of all Employee  Salary :");
@@ -156,7 +156,7 @@ public class MaxDepartment {
                 .mapToInt(Employee::getSalary)
                 .sum();
         System.out.println(sum);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Average salary of employees in each department
         System.out.println("Average salary of employees in each department :");
@@ -164,28 +164,28 @@ public class MaxDepartment {
                 .collect(Collectors.groupingBy(
                         Employee :: getDepartment, Collectors.averagingInt(Employee :: getSalary)))
                 .forEach((department, averageSalary) -> System.out.println(department + ": " + averageSalary));
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // maxBy()
         System.out.print("Max salary  : ");
         employees.stream()
                 .collect(Collectors.maxBy(Comparator.comparingInt(Employee::getSalary)))
                 .ifPresent(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // or
         employees.stream()
                 .mapToInt(Employee :: getSalary)
                 .max()
                 .ifPresent(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
         // Remove duplicate emp
         employees.stream()
                 .collect(Collectors.toMap(Employee :: getId, e -> e, (e1,e2) -> e1))
                 .values()
                 .forEach(System.out::println);
-        System.out.println(STR."------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
 
     }
 }
