@@ -29,5 +29,7 @@ Anti-patterns (VERY important)
 
 Exception Propagation :
 
-
+When an exception is thrown in a method, it propagates up the call stack until it is caught by an
+appropriate catch block.If no catch block is found, the program terminates.
+Understanding how exceptions propagate is crucial for effective error handling and debugging.
 
