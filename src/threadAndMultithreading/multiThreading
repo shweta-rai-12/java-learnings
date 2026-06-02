@@ -1,1 +1,74 @@
+Thread ; A thread is a lightweight process, it executes the small code of instrcutions.
 
+Process : A process is a execution of a program.
+-  its heavy weight.
+- It has its own memory space, code, data and system resources.
+
+
+Multithreading : It is a process of executing multiple threads simultaneously.
+- It allows a program to perform multiple tasks at the same time.
+
+Concurrency : It is the process of executing multiple process simultaneously.
+- It allows multiple processes to run at the same time, but they may not be executing at the same time.
+----------------------------------------------------------------------------------------------------------------------
+Thread Methods  :
+----------------------------------------------------------------------------------------------------------------------
+
+1. t1.start() -> Starts the thread and calls the run() method.
+
+2. run() -> Actually execution of thread, it contains the actual that has to be executed by the thread.
+
+3. t1.sleep() -> It is used to pause the execution of the thread for a specified amount of time.
+- Suspends the current execution of the thread for a specified amount of time.
+
+4. t1.Join() -> It stops the execution of the current thread until the thread on which join() is called is finished.
+Main thread will wait until the thread t1 is finished, then it will continue its execution.
+
+5. SetPriority -> It is used to set the priority of the thread.
+Priorities -> Thread.MIN_PRIORITY (1) -> Lowest priority
+              Thread.NORM_PRIORITY (5) -> Normal priority
+              Thread.MAX_PRIORITY (10) -> Highest priority
+- It is not mandatory to run based on priority, it is just a hint to the thread scheduler.
+
+6. t1.interrupt()  -> It is used ti interrupt the current thread, that is in waiting or sleeping state.
+- It immediate stops the execution of the thread and throws InterruptedException.
+
+7. t1.yield()  -> It is a hint that current thread wants to allow other threads to execute.
+- It is used to pause the current thread and allow other threads to execute.
+- It is not guaranteed that the current thread will pause, it is just a hint to the thread scheduler.
+
+8. t1.setDemon(Boolean true or false) -> It is used to set the thread as a daemon thread.
+- A daemon thread is a thread that runs in the background and does not prevent the JVM from exiting when the program finishes.
+- If a thread is set as a daemon thread, it will automatically terminate when all non-daemon threads have finished executing.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+THREAD - LIFE CYCLE :
+
+New -> Runnable -> Running -> Terminated(Dead)
+                      |
+                      Blocked/Waiting/Sleeping
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+Synchonization : It is a process of controlling the access of multiple threads to a shared resource.
+- It is used to prevent the thread interference and consistency problem.
+- It is achieved by using the synchronized keyword in Java.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Locks : It is a mechanism to control the access of multiple threads to a shared resource.
+- It is used to prevent the thread interference and consistency problem.
+- It is achieved by using the synchronized keyword in Java.
+- It is also achieved by using the Lock interface in Java.
+
+Two Types of Locks :
+1. Intrinsic Locks (Synchronized Blocks) : It is a lock that is associated with
+every object in Java. We cant see them but they are there.
+- It is achieved by using the synchronized keyword in Java.
+- These are automatic locks.
+
+2. Explicit Locks (Lock Interface) : It is more advanced locks.
+- These locks can be controlled by Lock interface in Java.
+- It can be explicitly controlled by programmer, i.e when to LOCK and UNLOCK
+- It provides more features than intrinsic locks, such as fairness, tryLock(), etc.
+
+There are some loopholes in the SYnchronized blocks, such as :
