@@ -71,4 +71,12 @@ every object in Java. We cant see them but they are there.
 - It can be explicitly controlled by programmer, i.e when to LOCK and UNLOCK
 - It provides more features than intrinsic locks, such as fairness, tryLock(), etc.
 
+Lock is INterface
+Lock lock = new ReentrantLock(); -> It is used to create a lock object.
+Lock.lock() -> It is used to acquire the lock.
+Lock.unlock() -> It is used to release the lock.
+Lock.tryLock() -> It is used to acquire the lock if it is available, otherwise it returns false.
+Lock.tryLock(long timeout, TimeUnit unit) -> It is used to acquire the lock if it is available within the specified time,
+otherwise it returns false.
+
 There are some loopholes in the SYnchronized blocks, such as :

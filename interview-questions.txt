@@ -1,0 +1,87 @@
+Deloitte : (Java Developer with 2 years of experience)
+------------------------------------------------------------------------------------------------------------------------
+ Round 1 – Java Fundamentals & Coding
+
+🔹 Java 8+ Features
+1. Lambda Expressions
+A lambda expression is a short way of writing an implementation of a functional interface
+(an interface that contains only one abstract method).
+2. Functional Interfaces
+A Functional Interface is an interface that contains exactly one abstract method.
+
+It can have:
+
+One abstract method ✅
+Multiple default methods ✅
+Multiple static methods ✅
+Methods inherited from Object (toString(), equals(), etc.) ✅
+
+But it cannot have more than one abstract method.
+3. Streams API
+The Stream API was introduced in Java 8 to process collections of data (such as List, Set, etc.) in a declarative and functional style.
+
+Instead of writing loops manually, you describe what you want to do with the data.
+- A stream is like a pipeline, in which the data flows and we can filter the data, transform it, and perform various operations on it.
+
+4. Method References
+The Stream API was introduced in Java 8 to process collections of data (such as List, Set, etc.) in a declarative and functional style.
+
+Instead of writing loops manually, you describe what you want to do with the data.
+
+ex: names.forEach(System.out::println);
+5. Default & Static Methods in Interfaces
+A Default method in a Interface is a method which starts with default keyword and has implmentation in the interface itself.
+It can be overridden by the implementing class if needed.
+Ex : default void defaultMethod() {
+    System.out.println("This is a default method in the interface.");
+}
+A Static method in a Interface is a method which starts with static keyword and has implmentation in the interface itself.
+It cannot be overridden by the implementing class. It belongs to the interface and can be called using the interface name but not object.
+Ex : static void staticMethod() {
+    System.out.println("This is a static method in the interface.");
+
+6. forEach
+🔹 ArrayList vs LinkedList
+🔹 Method Overriding
+🔹 Abstract Class vs Interface
+🔹 ConcurrentHashMap
+🔹 StringBuffer vs StringBuilder
+🔹 Time Complexity of ArrayList and LinkedList Operations
+🔹 Polymorphism Scenarios
+Child child = new Parent() ❌
+Parent child = new Child() ✅
+🔹 Multithreading Concepts
+🔹 Runnable vs Callable
+🔹 Java Memory Model (Heap & Stack Memory)
+🔹 Serialization & Deserialization
+🔹 Executor Framework
+🔹 Two Sum Problem
+Brute Force Solution
+Optimal Solution using HashMap
+🔹 HashMap Internal Implementation ⭐
+HashMap internally uses an array of buckets. Each bucket stores nodes containing key, value, hash, and next reference.
+ When a key-value pair is inserted, HashMap calculates the key's hashCode, determines the bucket index, and stores the
+  node there. If multiple keys map to the same bucket, a collision occurs. Before Java 8, collisions were handled using
+   linked lists; from Java 8 onward, buckets with many collisions are converted into Red-Black Trees for better performance.
+   HashMap uses hashCode() to locate the bucket and equals() to find the exact key. The default capacity is 16,
+    the load factor is 0.75, and resizing occurs when the threshold is exceeded.
+
+🌱 Round 2 – Spring Boot, Backend & Project Discussion
+
+🔹 Team Structure & Responsibilities
+🔹 Day-to-Day Work Experience
+🔹 Client Interactions
+🔹 Internal Working of @RestController ⭐
+🔹 Request Flow in Spring Boot ⭐
+🔹 Controller, Service & Model Layers
+🔹 JPA vs Hibernate ⭐
+🔹 Parent Class of Exception → Throwable
+🔹 Advantages & Use Cases of Abstract Classes
+🔹 Java 7 vs Java 8 Memory Changes
+🔹 Cascade Operations in JPA
+🔹 What is Spring Boot?
+🔹 How to Implement Routes Without Spring Boot?
+
+
+----------------------------------------------------------------------------------------------------
+

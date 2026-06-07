@@ -2,6 +2,12 @@ package dsa.templates.slidingWindow;
 
 public class TwoPointer {
 
+    /**
+     * Two Pointer :
+     * @param arr
+     * @param window
+     * @return
+     */
     public static int twoPointer(int[] arr, int window){
         int l =0;
         int r = window-1;
