@@ -2,7 +2,7 @@ package blind_75;
 
 import java.util.HashSet;
 
-public class BLongestSubStringWithoutRepeatingCharacters {
+public class C3LongestSubStringWithoutRepeatingCharacters {
 
     // Sliding window
     public static int longestSubstring(String str) {

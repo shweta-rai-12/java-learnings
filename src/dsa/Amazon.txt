@@ -1,0 +1,184 @@
+DSA
+--------------------------------------------------------------------------------------------------------------------
+Arrays & Strings
+├── Two pointer technique
+├── Sliding window
+├── Kadane's algorithm
+└── String manipulation
+
+Linked Lists
+├── Reverse linked list
+├── Detect cycle
+├── Merge sorted lists
+└── Find middle node
+
+Trees & Graphs
+├── Binary tree traversals (BFS, DFS)
+├── Binary Search Tree operations
+├── Level order traversal
+├── Lowest common ancestor
+└── Graph BFS and DFS
+
+Dynamic Programming
+├── Fibonacci variants
+├── Knapsack problem
+├── Longest common subsequence
+├── Coin change problem
+└── House robber
+
+Sorting & Searching
+├── Binary search variants
+├── QuickSort, MergeSort
+└── Search in rotated array
+
+Stacks & Queues
+├── Valid parentheses
+├── Next greater element
+└── Implement queue using stacks
+
+HashMap & HashSet
+├── Two sum
+├── Group anagrams
+└── Top K frequent elements
+--------------------------------------------------------------------------------------------------------------------
+System Design :
+--------------------------------------------------------------------------------------------------------------------
+Fundamentals
+├── Horizontal vs Vertical scaling
+├── Load balancing
+├── Caching (Redis, Memcached)
+├── Database sharding and partitioning
+├── CAP theorem
+├── Consistent hashing
+└── Rate limiting
+
+Common System Design Problems
+├── Design URL shortener (like bit.ly)
+├── Design Twitter / News feed
+├── Design WhatsApp / Chat system
+├── Design Amazon / E-commerce platform
+├── Design Netflix / Video streaming
+├── Design Uber / Ride sharing
+├── Design Search Autocomplete
+└── Design Notification system
+
+Key Concepts
+├── Microservices vs Monolith
+├── Message queues (Kafka, SQS)
+├── Database choices (SQL vs NoSQL)
+├── CDN — Content Delivery Network
+├── API Gateway design
+└── Event driven architecture
+--------------------------------------------------------------------------------------------------------------------
+AWS
+--------------------------------------------------------------------------------------------------------------------
+Must Know (Core):
+├── EC2 — Virtual servers
+├── S3 — Object storage (you already have this!)
+├── Lambda — Serverless functions
+├── RDS — Relational database service
+├── DynamoDB — NoSQL database
+├── SQS — Message queue
+├── SNS — Notification service
+├── API Gateway — Manage APIs
+└── CloudWatch — Monitoring and logs
+
+Good to Know:
+├── ECS / EKS — Container services
+├── IAM — Identity and access management
+├── VPC — Virtual private cloud
+├── ElastiCache — Redis/Memcached
+└── CloudFront — CDN
+
+
+4. Amazon Leadership Principles
+This is unique to Amazon and extremely important. Every behavioral question maps to one of these 16 principles:
+1.  Customer Obsession
+2.  Ownership
+3.  Invent and Simplify
+4.  Are Right, A Lot
+5.  Learn and Be Curious
+6.  Hire and Develop the Best
+7.  Insist on the Highest Standards
+8.  Think Big
+9.  Bias for Action
+10. Frugality
+11. Earn Trust
+12. Dive Deep
+13. Have Backbone; Disagree and Commit
+14. Deliver Results
+15. Strive to be Earth's Best Employer
+16. Success and Scale Bring Broad Responsibility
+
+
+5. Distributed Systems & Microservices Deep Dive
+Amazon builds massively distributed systems. You need to understand:
+Distributed Systems Concepts
+├── Consistency vs Availability
+├── Eventual consistency
+├── Distributed transactions (Saga pattern)
+├── Circuit breaker pattern
+├── Service discovery (Eureka)
+├── API Gateway pattern
+└── Bulkhead pattern
+
+Microservices Communication
+├── Synchronous — REST, gRPC
+├── Asynchronous — Kafka, SQS, RabbitMQ
+└── Event driven architecture
+
+Data Management
+├── Database per service pattern
+├── CQRS pattern
+├── Event sourcing
+└── Cache strategies
+
+🔴 6. Additional Technical Skills Needed
+Concurrency & Multithreading (Deep)
+├── Thread pools and ExecutorService
+├── CompletableFuture
+├── ReentrantLock
+├── ConcurrentHashMap internals
+├── Deadlock prevention
+└── Producer consumer problem
+
+JVM Internals
+├── Garbage collection algorithms
+├── Memory management (heap, stack, metaspace)
+├── JVM tuning and performance
+└── Memory leak detection
+
+Design Patterns (Deep)
+├── Creational — Singleton, Factory, Builder, Prototype
+├── Structural — Adapter, Decorator, Proxy, Facade
+├── Behavioural — Observer, Strategy, Command, Template
+
+Database (Deep)
+├── Query optimization and indexing
+├── Transactions and ACID properties
+├── Database sharding
+└── Redis caching
+
+🎯 Amazon SDE 2 Interview Process:
+Round 1 — Online Assessment
+├── 2 coding problems (Medium/Hard LeetCode)
+└── Time: 90 minutes
+
+Round 2 — Phone Screen
+├── 1-2 coding problems
+└── Basic behavioral questions
+
+Round 3, 4, 5 — Virtual Onsite (4-5 rounds)
+├── Round 1: Coding + Leadership Principles
+├── Round 2: System Design
+├── Round 3: Coding + Leadership Principles
+├── Round 4: Leadership Principles (Bar Raiser round)
+└── Round 5: Hiring Manager round
+
+
+TopicResource
+DSA  -- LeetCode, NeetCode.io
+System Design--ByteByteGo book, Gaurav Sen YouTube
+AWS -- AWS official docs, Stephane Maarek Udemy
+Leadership -- PrinciplesAmazon's official page + practiceJava Deep Dive
+Effective Java-- book by Joshua BlochMock InterviewsPramp, InterviewBit

@@ -19,7 +19,7 @@ public class LongestPrefix {
         LongestPrefix lp = new LongestPrefix();
         String[] strs = {"fly","float","flow"};
         System.out.println(Arrays.toString(strs));
-//        System.out.println(STR."The longest prefix \{lp.longestCommonPrefix(strs)}");
+        System.out.println("The longest prefix " + lp.longestCommonPrefix(strs));
     }
 
 }

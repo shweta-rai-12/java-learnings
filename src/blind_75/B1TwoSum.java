@@ -2,7 +2,7 @@ package blind_75;
 
 import java.util.Arrays;
 
-public class ATwoSum {
+public class B1TwoSum {
 
     public static int[] twoSum(int[] arr, int target) {
         Arrays.sort(arr);

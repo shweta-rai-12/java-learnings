@@ -16,7 +16,15 @@ Exception Chaining
 Suppressed Exceptions
 try-with-resources Internals
 Creating Professional Exception Hierarchies
+---------------------------------------------------------------------------------------------------
 Fail-Fast vs Fail-Safe
+--Fail fast : It is a design approach where the system fails immediately when an error occurs,
+rather than trying to continue and potentially causing more issues.
+ex : HashMap , ArrayList
+--Fail safe : It is a design approach where the system continues to operate even when an error
+occurs, by handling the error gracefully and preventing it from causing further issues.
+ex : ConcurrentHashMap , CopyOnWriteArrayList
+---------------------------------------------------------------------------------------------------
 Exception Translation Pattern
 Best Practices in Enterprise Applications
 Performance Cost of Exceptions
@@ -30,6 +38,6 @@ Anti-patterns (VERY important)
 Exception Propagation :
 
 When an exception is thrown in a method, it propagates up the call stack until it is caught by an
-appropriate catch block.If no catch block is found, the program terminates.
+appropriate catch block. If no catch block is found, the program terminates.
 Understanding how exceptions propagate is crucial for effective error handling and debugging.
 
