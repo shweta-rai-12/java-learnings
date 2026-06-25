@@ -1,0 +1,10 @@
+Sliding window :
+
+It is technique used to solve problems that involve finding a subarray or substring that satisfies certain conditions.
+The idea is to maintain a window of elements and slide it over the input data to find the desired result.
+
+How to identify problems that can be solved using the sliding window technique:
+- Constant size window -> check classicSlidingWindow
+- Longest SubArray or SubsString <condition> (most asked) [pattern 1] -> check LargestSubArray
+- Number of subarrays or substrings <condition> (most asked) [need a diff pattern 2] -> check
+- Finding the min or max window - (not asked much)

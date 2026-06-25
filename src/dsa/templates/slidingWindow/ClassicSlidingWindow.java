@@ -1,6 +1,6 @@
 package dsa.templates.slidingWindow;
 
-public class TwoPointerWindow {
+public class ClassicSlidingWindow {
 
     /**
      * Two Pointer :
