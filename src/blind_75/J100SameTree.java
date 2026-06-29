@@ -1,8 +1,5 @@
 package blind_75;
 
-import com.sun.source.tree.Tree;
-import dsa.templates.trees.Node;
-
 public class J100SameTree {
 
     public class TreeNode {
