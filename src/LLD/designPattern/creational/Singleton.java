@@ -1,0 +1,4 @@
+package LLD.designPattern.creational;
+
+public class Singleton {
+}

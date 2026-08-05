@@ -1,4 +1,4 @@
-package dsa.searching;
+package dsa.templates.searching;
 
 public class BinarySearch {
 

@@ -1,4 +1,4 @@
-package dsa.dynamicprogramming;
+package dsa.templates.dynamicprogramming;
 
 public class Knapsack {
 

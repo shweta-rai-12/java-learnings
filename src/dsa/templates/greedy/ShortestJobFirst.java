@@ -1,4 +1,4 @@
-package dsa.greedy;
+package dsa.templates.greedy;
 
 import java.util.Arrays;
 
